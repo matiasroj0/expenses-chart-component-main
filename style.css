@@ -1,0 +1,262 @@
+:root {
+    /* primary */
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    /* neutral */
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+}
+
+/* css reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/*  */
+
+html {
+    font-size: 18px;
+}
+
+body {
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+main {
+    max-width: 40rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.my-balance {
+    background-color: var(--soft-red);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--very-pale-orange);
+}
+
+.my-balance h6 {
+    font-size: .69rem;
+    font-weight: lighter;
+    padding-bottom: .2rem;
+}
+
+.my-balance span {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.logo {
+    width: 12%;
+}
+
+.spending {
+    background-color: var(--very-pale-orange);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.spending h3 {
+    color: var(--dark-brown);
+    font-size: 1.35rem;
+    padding-bottom: .5rem;
+}
+
+.chart {
+    display: flex;
+    gap: .5rem;
+}
+
+.day-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: .3rem;
+    height: 9rem;
+}
+
+.day-spend-amount {
+    background-color: var(--dark-brown);
+    border-radius: .2rem;
+    padding: .2rem .3rem;
+    color: var(--very-pale-orange);
+    font-size: .7rem;
+    text-align: center;
+}
+
+.day-spend-chart {
+    background-color: var(--soft-red);
+    width: 40px;
+    border-radius: .3rem;
+    margin: .31rem;
+    cursor: pointer;
+}
+
+.day-spend-chart:hover {
+    background-color: var(--cyan);
+}
+
+.day-chart h5 {
+    font-weight: lighter;
+    font-size: .8rem;
+    color: var(--medium-brown);
+}
+
+.month-total-container {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid hsla(28, 10%, 53%, 0.25);
+    padding-top: 1.5rem;
+}
+
+.month-total p {
+    color: var(--medium-brown);
+    font-size: .83rem;
+    letter-spacing: .4px;
+    font-weight: lighter;
+}
+
+.month-total span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--dark-brown);
+}
+
+.month-last-month {
+    padding-top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.month-last-month span {
+    font-size: .9rem;
+    font-weight: 700;
+    color: var(--dark-brown);
+}
+
+.month-last-month p {
+    color: var(--medium-brown);
+    font-size: .83rem;
+    letter-spacing: .4px;
+    font-weight: lighter;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width:600px) {
+    body {
+        align-items: initial;
+        padding: 2rem;
+    }
+
+    .logo {
+        width: 15%;
+    }
+
+    .my-balance h6 {
+        font-size: .68rem;
+        padding-bottom: .2rem;
+    }
+    
+    .my-balance span {
+        font-size: 1.3rem;
+    }
+    
+    .spending {
+        padding: 1.1rem;
+    }
+
+    .spending h3 {
+        font-size: 1.15rem;
+    }
+
+    .chart {
+        gap: 3px;
+    }
+    
+    .day-spend-amount {
+        padding: .2rem .2rem;
+        font-size: .55rem;
+    }
+    
+    .day-spend-chart {
+        width: 30px;
+        height: 90px;
+    }
+    
+    .day-chart h5 {
+        font-size: .7rem;
+    }
+
+    .month-total p {
+        font-size: .74rem;
+    }
+    
+    .month-total span {
+        font-size: 2rem;
+    }
+
+    .month-last-month {
+        padding-top: 1.2rem;
+    }
+
+    .month-last-month span {
+        font-size: .8rem;
+    }
+    
+    .month-last-month p {
+        font-size: .73rem;
+    }
+}

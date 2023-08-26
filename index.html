@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap" rel="stylesheet">
+  <!--  -->
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <section class="card">
+      <div class="my-balance">
+        <div>
+          <h6>My balance</h6>
+          <span>$921.48</span>
+        </div>
+        <img class="logo" src="images/logo.svg" alt="logo">
+      </div>
+
+      <div class="spending">
+        <h3>Spending - Last 7 days</h3>
+
+        <div class="chart">
+          <div class="day-chart monday">
+            <span class="day-spend-amount hidden" id="monday-amount">$92.32</span>
+            <div class="day-spend-chart" id="monday-chart"></div>
+            <h5>mon</h5>
+          </div>
+          <div class="day-chart tuesday">
+            <span class="day-spend-amount hidden" id="tuesday-amount">$92.34</span>
+            <div class="day-spend-chart" id="tuesday-chart"></div>
+            <h5>tue</h4>
+          </div>
+          <div class="day-chart wednesday">
+            <span class="day-spend-amount hidden" id="wednesday-amount">$92.34</span>
+            <div class="day-spend-chart" id="wednesday-chart"></div>
+            <h5>wed</h4>
+          </div>
+          <div class="day-chart thursday">
+            <span class="day-spend-amount hidden" id="thursday-amount">$92.34</span>
+            <div class="day-spend-chart" id="thursday-chart"></div>
+            <h5>thu</h4>
+          </div>
+          <div class="day-chart friday">
+            <span class="day-spend-amount hidden" id="friday-amount">$92.34</span>
+            <div class="day-spend-chart" id="friday-chart"></div>
+            <h5>fri</h4>
+          </div>
+          <div class="day-chart saturday">
+            <span class="day-spend-amount hidden" id="saturday-amount">$92.34</span>
+            <div class="day-spend-chart" id="saturday-chart"></div>
+            <h5>sat</h4>
+          </div>
+          <div class="day-chart sunday">
+            <span class="day-spend-amount hidden" id="sunday-amount">$92.34</span>
+            <div class="day-spend-chart" id="sunday-chart"></div>
+            <h5>sun</h4>
+          </div>
+        </div>
+
+        <div class="month-total-container">
+          <div class="month-total">
+            <p>Total this month</p>
+            <span>$478.33</span> 
+          </div>
+          <div class="month-last-month">
+            <span>+2.4%</span>
+            <p>from last month</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>
