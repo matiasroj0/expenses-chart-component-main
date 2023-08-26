@@ -4,7 +4,7 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 
 ### Links
 
-- Live Site URL: 
+- Live Site URL: https://scintillating-semolina-b416c1.netlify.app/
 
 ### Screenshot
 
